@@ -26,6 +26,9 @@ ul.links li, ul.links li a span, ul.links li.title h1 {
 	line-height:40px !important;
 }
 
+ul.links li.github {
+	display: none;
+}
 
 ul.links li.navigation {
 	position: absolute;
