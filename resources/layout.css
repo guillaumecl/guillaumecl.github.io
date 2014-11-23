@@ -65,3 +65,9 @@ ul.links li.navigation.next {
 ul.links li.navigation a {
 	width: auto;
 }
+
+.layout_right div.date {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}

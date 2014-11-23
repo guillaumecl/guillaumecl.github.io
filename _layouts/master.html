@@ -44,6 +44,9 @@
 		</div>
 
 		<div class="layout_right">
+			{% if page.date %}
+			<div class="date">Posted on: {{page.date | date: "%-d %B %Y"}}</div>
+			{% endif %}
 			{{ content }}
 		</div>
 	</body>
