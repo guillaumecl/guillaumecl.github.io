@@ -51,6 +51,7 @@ ul.links li.navigation {
 	position: absolute;
 	top: 0px;
 	width: auto;
+	height: 20px;
 }
 
 ul.links li.navigation.prev {
