@@ -1,0 +1,43 @@
+.layout_top {
+	width: 100%;
+
+	margin:0;
+	padding:0;
+}
+.layout_left {
+	position: fixed;
+	top: 20px;
+	bottom: 0px;
+	left: 0px;
+	width:320px;
+
+	margin:0;
+	padding;0;
+
+	background-color:black;
+
+	overflow-y: auto;
+}
+.layout_right {
+	position: fixed;
+	top: 20px;
+	bottom: 0px;
+	left: 320px;
+	right: 0px;
+
+	overflow-y: auto;
+}
+
+ul.links {
+	background-color: grey;
+	height: 20px;
+
+	margin:0;
+	padding:0;
+}
+
+ul.links li {
+	color: lightgrey;
+
+	display: inline;
+}

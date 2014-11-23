@@ -1,0 +1,38 @@
+@font-face {
+	font-family: "terminus";
+	src: url(terminus-4.39.ttf) format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "terminus";
+	src: url(terminus-bold-4.39.ttf) format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "terminus";
+	src: url(terminus-italic-4.39.ttf) format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+pre {
+	font-family: terminus, monospace !important;
+}
+
+.terminal {
+	font-family: terminus, monospace !important;
+	background-color: black;
+	color: lightgray;
+
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
