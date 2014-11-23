@@ -36,3 +36,32 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+ul.links {
+	background-color: grey;
+	height: 20px;
+
+	margin:0;
+	padding:0;
+}
+
+ul.links li, ul.links li a {
+	color: lightgrey;
+
+	list-style: none;
+
+	float:left;
+	width: 26px;
+	height: 100%;
+
+	vertical-align: middle;
+	text-align: center;
+}
+
+ul.links li a:visited {
+	color: lightgrey;
+}
+
+ul.links li.sel {
+	background-color: black;
+}
