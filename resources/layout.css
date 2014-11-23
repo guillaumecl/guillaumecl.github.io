@@ -40,3 +40,7 @@ ul.links li.title {
 	left: 320px;
 	top: 0px;
 }
+
+ul.links li, ul.links li a span, ul.links li.title h1 {
+	line-height:20px;
+}

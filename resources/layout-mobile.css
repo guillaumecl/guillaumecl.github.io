@@ -17,8 +17,11 @@ ul.links {
 ul.links li, ul.links li a {
 	width: 40px !important;
 }
-
 ul.links li.title {
 	width: auto !important;
 	left: 200px !important;
+}
+
+ul.links li, ul.links li a span, ul.links li.title h1 {
+	line-height:40px !important;
 }
