@@ -6,12 +6,14 @@
 		<link rel="stylesheet" type="text/css" href="resources/style.css">
 		<link rel="stylesheet" type="text/css" href="resources/layout.css">
 		<link rel="stylesheet" type="text/css" href="octicons/octicons.css">
+		<link rel="shortcut icon" type="image/png" href="/favicon.png" />
 	</head>
 	<body>
 		<div class="layout_top">
 			<ul class="links">
-				<li><a href="index.html"><span class="octicon octicon-browser" title="Index"></span></a></li>
-				<li><a href="credits.html"><span class="octicon octicon-question" title="Credits"></span></a></li>
+				{% for cat in site.html_pages %}
+				<li><a href="{{cat.path}}"><span class="octicon octicon-{{cat.icon}}" title="{{cat.title}}"></span></a></li>
+				{% endfor %}
 			</ul>
 		</div>
 		<div class="layout_left">
