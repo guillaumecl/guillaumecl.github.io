@@ -30,3 +30,13 @@
 
 	padding: 5px;
 }
+
+ul.links {
+	height: 20px;
+}
+
+ul.links li.title {
+	position:absolute;
+	left: 320px;
+	top: 0px;
+}

@@ -41,7 +41,6 @@ body {
 
 ul.links {
 	background-color: grey;
-	height: 20px;
 
 	margin:0;
 	padding:0;
@@ -69,9 +68,6 @@ ul.links li.sel {
 }
 
 ul.links li.title {
-	position:absolute;
-	left: 320px;
-	top: 0px;
 	width: auto;
 }
 
