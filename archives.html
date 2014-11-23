@@ -1,0 +1,15 @@
+---
+title: Archives
+icon: book
+order: 2
+---
+Here is a list of all blog posts, in reverse chronological order:
+{% for post in site.posts %}
+
+<h2><a href="{{post.url}}">{{post.title}}</a></h2>
+
+<p>Posted on {{post.date | date: "%-d %B %Y"}}</p>
+
+{{post.excerpt}}
+
+{% endfor %}
