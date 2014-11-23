@@ -11,7 +11,8 @@
 	<body>
 		<div class="layout_top">
 			<ul class="links">
-				{% for cat in site.html_pages %}
+				{% assign sorted_pages = site.html_pages | sort:"order" %}
+				{% for cat in sorted_pages %}
 				<li><a href="{{cat.path}}"><span class="octicon octicon-{{cat.icon}}" title="{{cat.title}}"></span></a></li>
 				{% endfor %}
 			</ul>
