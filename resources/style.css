@@ -32,6 +32,10 @@ pre {
 	padding: 0;
 }
 
+.terminal pre {
+	white-space: pre-wrap;
+}
+
 body {
 	margin: 0;
 	padding: 0;
