@@ -19,9 +19,33 @@ ul.links li, ul.links li a {
 }
 ul.links li.title {
 	width: auto !important;
-	left: 200px !important;
+	left: 150px !important;
 }
 
 ul.links li, ul.links li a span, ul.links li.title h1 {
 	line-height:40px !important;
+}
+
+
+ul.links li.navigation {
+	position: absolute;
+	top: 0px;
+	width: 40px !important;
+	height: 40px !important;
+}
+
+ul.links li.navigation.prev {
+	left: 150px !important;
+}
+
+ul.links li.navigation.next {
+	right: 0px;
+}
+
+ul.links li.navigation a {
+	width: auto;
+}
+
+ul.links li.navigation a span.text {
+	display:none;
 }
