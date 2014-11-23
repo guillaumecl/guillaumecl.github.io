@@ -6,10 +6,17 @@ order: 2
 Here is a list of all blog posts, in reverse chronological order:
 {% for post in site.posts %}
 
-<h3><a href="{{post.url}}"><span class="octicon octicon-book" title="{{post.title}}"></span>{{post.title}}</a></h3>
+<div class="post">
+	<h3>
+		<a href="{{post.url}}">
+			<span class="octicon octicon-book" title="{{post.title}}"></span>{{post.title}}
+		</a>
+	</h3>
 
-<p>Posted on {{post.date | date: "%-d %B %Y"}}</p>
+	<div class="date">Posted on {{post.date | date: "%-d %B %Y"}}</div>
 
-{{post.excerpt}}
+	{{post.excerpt}}
+
+</div>
 
 {% endfor %}
