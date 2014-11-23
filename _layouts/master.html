@@ -15,6 +15,7 @@
 				{% for cat in sorted_pages %}
 				<li {% if cat.path == page.path %}class="sel"{% endif %}><a href="{{cat.path}}"><span class="octicon octicon-{{cat.icon}}" title="{{cat.title}}"></span></a></li>
 				{% endfor %}
+				<li><a href="https://github.com/guillaumecl/guillaumecl.github.io"><span class="octicon octicon-mark-github" title="Sources on github"></span></a></li>
 			</ul>
 		</div>
 		<div class="layout_left">
