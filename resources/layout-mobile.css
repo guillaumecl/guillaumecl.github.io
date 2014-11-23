@@ -20,4 +20,5 @@ ul.links li, ul.links li a {
 
 ul.links li.title {
 	width: auto !important;
+	left: 200px !important;
 }
