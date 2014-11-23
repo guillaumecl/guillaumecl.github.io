@@ -15,10 +15,10 @@
 			<ul class="links">
 				{% assign sorted_pages = site.html_pages | sort:"order" %}
 				{% for cat in sorted_pages %}
-				<li {% if cat.path == page.path %}class="sel"{% endif %}><a href="{{cat.path}}"><span class="octicon octicon-{{cat.icon}}" title="{{cat.title}}" /></a></li>
+				<li {% if cat.path == page.path %}class="sel"{% endif %}><a href="{{cat.path}}"><span class="octicon octicon-{{cat.icon}}" title="{{cat.title}}"></span></a></li>
 				{% endfor %}
-				<li><a href="https://github.com/guillaumecl/guillaumecl.github.io"><span class="octicon octicon-mark-github" title="Sources on Github" /></a></li>
-				<li class="title"><span class="octicon octicon-{{page.icon}}" /><h1>{{ page.title }}</h1></li>
+				<li><a href="https://github.com/guillaumecl/guillaumecl.github.io"><span class="octicon octicon-mark-github" title="Sources on Github"></span></a></li>
+				<li class="title"><span class="octicon octicon-{{page.icon}}"></span><h1>{{ page.title }}</h1></li>
 			</ul>
 		</div>
 		<div class="layout_left terminal">
