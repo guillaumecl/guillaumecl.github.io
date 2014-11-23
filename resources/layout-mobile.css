@@ -14,3 +14,7 @@ ul.links {
 	/* Links clickable more easily */
 	height: 40px !important;
 }
+
+ul.links li a {
+	width: 40px !important;
+}
