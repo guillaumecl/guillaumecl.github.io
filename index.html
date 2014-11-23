@@ -3,3 +3,26 @@ title: Home
 icon: home
 order: 1
 ---
+
+{% assign first = true %}
+
+{% for post in site.posts limit:3 %}
+
+{% unless first %}
+<hr />
+{% endunless %}
+{% assign first = false %}
+
+<div class="post">
+	<h3>
+		<a href="{{post.url}}">
+			<span class="octicon octicon-book" title="{{post.title}}"></span>{{post.title}}
+		</a>
+	</h3>
+
+	<div class="date">Posted on {{post.date | date: "%-d %B %Y"}}</div>
+
+	{{post.content}}
+</div>
+
+{% endfor %}
