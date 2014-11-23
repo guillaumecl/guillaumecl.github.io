@@ -65,3 +65,18 @@ ul.links li a:visited {
 ul.links li.sel {
 	background-color: black;
 }
+
+ul.links li.title {
+	position:absolute;
+	left: 320px;
+	top: 0px;
+	width: auto;
+}
+
+ul.links li h1 {
+	color: white;
+	font-size:18px;
+	display:inline;
+	padding:0;
+	margin:0;
+}
