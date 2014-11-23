@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>My webpage - {{ page.title }}</title>
+		<link rel="stylesheet" type="text/css" href="resources/style.css">
+		<link rel="stylesheet" type="text/css" href="resources/layout.css">
+		<link rel="stylesheet" type="text/css" href="octicons/octicons.css">
+	</head>
+	<body>
+		<div class="layout_top">
+			<ul class="links">
+				<li><a href="index.html"><span class="octicon octicon-browser" title="Index"></span></a></li>
+				<li><a href="credits.html"><span class="octicon octicon-question" title="Credits"></span></a></li>
+			</ul>
+		</div>
+		<div class="layout_left">
+			<div class="terminal">
+				<pre>$ cat news
+This is currently under construction.</pre>
+			</div>
+		</div>
+
+		<div class="layout_right">
+			{{ content }}
+		</div>
+	</body>
+</html>
