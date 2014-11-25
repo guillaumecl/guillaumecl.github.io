@@ -1,0 +1,5 @@
+{% include prompt %} ls -alh'
+
+-rw-r--r-- 1 blog blog This is a test for the terminal.
+
+{% include prompt %}

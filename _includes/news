@@ -1,3 +1,4 @@
+{% include prompt %} cat news
  ________________
 < Hello, World ! >
  ----------------
@@ -8,3 +9,5 @@
                 ||     ||
 
 This website is currently under construction. Please come again later when it's ready !
+
+{% include prompt %}
