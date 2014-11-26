@@ -4,7 +4,14 @@ icon: database
 order: 3
 ---
 Here is a list of all blog posts, in reverse chronological order:
+{% assign first = true %}
+
 {% for post in site.posts %}
+
+{% unless first %}
+<hr />
+{% endunless %}
+{% assign first = false %}
 
 <div class="post">
 	<h3>
@@ -17,6 +24,7 @@ Here is a list of all blog posts, in reverse chronological order:
 
 	{{post.excerpt}}
 
+	<a class="readmore" href="{{post.url}}">Read more…</a>
 </div>
 
 {% endfor %}

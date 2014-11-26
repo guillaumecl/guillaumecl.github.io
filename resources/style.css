@@ -84,3 +84,15 @@ a:hover {
 a:active {
 	text-decoration: underline;
 }
+
+a.readmore:before {
+	content: "» ";
+}
+
+a.readmore {
+	float:right;
+}
+
+hr {
+	clear: both;
+}

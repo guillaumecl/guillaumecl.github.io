@@ -15,14 +15,14 @@ order: 1
 
 <div class="post">
 	<h3>
-		<a href="{{post.url}}">
-			<span class="octicon octicon-book" title="{{post.title}}"></span> {{post.title}}
-		</a>
+		<span class="octicon octicon-book" title="{{post.title}}"></span> {{post.title}}
 	</h3>
 
 	<div class="date">Posted on {{post.date | date: "%-d %B %Y"}}</div>
 
-	{{post.content}}
+	{{post.excerpt}}
+
+	<a class="readmore" href="{{post.url}}">Read more…</a>
 </div>
 
 {% endfor %}
