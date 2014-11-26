@@ -17,10 +17,6 @@ ul.links {
 ul.links li, ul.links li a {
 	width: 40px !important;
 }
-ul.links li.title {
-	width: auto !important;
-	left: 150px !important;
-}
 
 ul.links li, ul.links li a span, ul.links li.title h1 {
 	line-height:40px !important;
@@ -51,4 +47,32 @@ ul.links li.navigation a {
 
 ul.links li.navigation a span.text {
 	display:none;
+}
+
+ul.links li.title {
+	width: unset !important;
+
+	white-space:nowrap;
+
+	position:absolute:
+
+	left: unset !important;
+	right: unset !important;
+	top: unset !important;
+	bottom: unset !important;
+
+	left: 190px !important;
+	right: 40px !important;
+	top: 0px !important;
+	bottom: 40px !important;
+
+	text-overflow: ellipsis;
+	overflow:hidden;
+
+}
+
+ul.links li.title h1 {
+	position:absolute:
+	left:0px;
+	right:0px;
 }
