@@ -76,3 +76,9 @@ ul.links li.title h1 {
 	left:0px;
 	right:0px;
 }
+
+p {
+	text-align: justify;
+	margin-right: 5px;
+	hyphens: auto;
+}
