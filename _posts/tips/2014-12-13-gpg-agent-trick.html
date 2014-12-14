@@ -1,0 +1,42 @@
+---
+title: Little trick with gpg-agent
+published: true
+---
+<p>As you might know, gpg-agent is a little program you can use to
+avoid typing your gpg's passphrase everytimes you need it. I've
+recently had an issue with gpg-agent failing in graphical mode, here
+is the solution to this problem, along with a small background
+information.</p>
+
+<h2>Some background</h2>
+
+<img src="{% asset_path pinentry.png %}" class="float_right margin"
+     alt="Pinentry graphical sample"
+     title="A samble showing pinentry requesting a key"/>
+
+<p>To work, gpg-agent typically communicates with a program that has
+the responsability of requesting your passphrase. This program is
+called pinentry, and there are several implementations available,
+	depending on your uses and desktop.</p>
+
+<p>pinentry typically shows a graphical screen requesting the
+passphrase, giving some information about the context of the
+application that requests the passphrase. When the graphical mode is
+not available though, there is a fallback mode in text mode (curses)
+</p>
+
+<p>One issue I've had with it recently was that on two of my
+computers, the graphical mode didn't work at all. I could decrypt
+files in text mode only, which meant that decrypting failed if there
+	was no controlling terminal.</p>
+
+<h2>The solution</h2>
+
+<pre class="terminal 80col">
+{% include prompt %} gpg-agent --daemon --enable-ssh-support --keep-display
+{% include prompt %} blah
+{% include prompt %} blah
+{% include prompt %} blah
+</pre>
+
+<p>

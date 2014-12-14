@@ -75,3 +75,7 @@ div.date {
 	top: 0px;
 	right: 0px;
 }
+
+img {
+	max-width: 95%;
+}
