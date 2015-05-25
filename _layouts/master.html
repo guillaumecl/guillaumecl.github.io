@@ -6,8 +6,8 @@
 		<title>BaOBoB - {{ page.title }}</title>
 		<link rel="stylesheet" type="text/css" href="/resources/style.css" />
 		<link rel="stylesheet" type="text/css" href="/resources/layout.css" />
-		<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 630px) and (orientation: portrait)" href="/resources/layout-mobile.css" />
-		<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 630px) and (orientation: landscape)" href="/resources/layout-mobile.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 630px) and (orientation: portrait)" href="/resources/layout-mobile.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 630px) and (orientation: landscape)" href="/resources/layout-mobile.css" />
 		<link rel="stylesheet" type="text/css" href="/resources/syntax.css" />
 		<link rel="stylesheet" type="text/css" href="/octicons/octicons.css" />
 		<link rel="shortcut icon" type="image/png" href="/favicon.png" />
@@ -19,7 +19,9 @@
 			<ul class="links">
 				{% assign sorted_pages = site.html_pages | sort:"order" %}
 				{% for cat in sorted_pages %}
-				<li {% if cat.path == page.path %}class="sel"{% endif %}><a href="/{{cat.path}}"><span class="octicon octicon-{{cat.icon}}" title="{{cat.title}}"></span></a></li>
+				{% if cat.order %}
+				<li {% if cat.icon == page.icon %}class="sel"{% endif %}><a href="/{{cat.path}}"><span class="octicon octicon-{{cat.icon}}" title="{{cat.title}}"></span></a></li>
+				{% endif %}
 				{% endfor %}
 				<li class="github"><a href="https://github.com/guillaumecl/guillaumecl.github.io"><span class="octicon octicon-mark-github" title="Sources on Github"></span></a></li>
 				<li class="title"><span class="octicon octicon-{{page.icon}}"></span><h1>{{ page.title }}</h1></li>
